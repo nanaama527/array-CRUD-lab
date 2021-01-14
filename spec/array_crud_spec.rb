@@ -19,6 +19,12 @@ describe "add_element_to_end_of_array" do
     element = "arrays!"
     expect(add_element_to_end_of_array(array, element).last).to eq("arrays!")
   end
+
+  it "Doesnt allow you to hardcode a result" do
+    array = ["wow", "I", "am", "really", "learning"]
+    element = "arrays!"
+    expect(add_element_to_end_of_array(array, element)).to eq( ["wow", "I", "am", "really", "learning", "arrays!"])
+  end
 end
 
 describe "add_element_to_start_of_array" do 
